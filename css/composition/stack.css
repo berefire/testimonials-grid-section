@@ -1,0 +1,7 @@
+.stack-lg > * + * {
+    margin-block-start: var(--space-lg);
+}
+
+.stack-xs > * + * {
+    margin-block-start: var(--space-xs);
+}

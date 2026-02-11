@@ -1,0 +1,10 @@
+.box-lg {
+    padding: var(--space-lg);
+    max-width: var(--card-max-s);
+    box-shadow: var(--shadow-black-soft);
+    border-radius: var(--radius-s);
+}
+
+.box-xl {
+    margin-block: var(--space-xl);
+}

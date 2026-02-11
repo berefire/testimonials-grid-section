@@ -22,7 +22,7 @@
     /* Micro spacing */
     --space-3xs: 0.25rem;        /* 4px  → 4 ÷ 13 */
     --space-2xs: 0.53rem;        /* 8px  → 8 ÷ 13 */
-    --space-xs: 1.07rem;         /* 16px → 16 ÷ 13 */
+    --space-xs: 1.23rem;         /* 16px → 16 ÷ 13 */
 
     /* Core spacing */
     --space-sm: 1.85rem;         /* 24px → 24 ÷ 13 */
