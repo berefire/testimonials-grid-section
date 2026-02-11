@@ -1,0 +1,14 @@
+html {
+    font-family: var(--font-main);
+    font-size: var(--fs-sm);
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+    min-block-size: 100%;
+}
+
+address {
+    display: inline;
+}

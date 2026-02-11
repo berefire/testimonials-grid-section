@@ -1,0 +1,78 @@
+:root {
+    /* Colors */
+    --color-white: hsl(0, 0%, 100%);
+    --color-bg-card-1: hsl(263, 55%, 52%);
+    --color-bg-img-card-1: hsl(264, 82%, 70%);
+    --color-bg-text-card-1: hsl(260, 100%, 95%);
+
+    --color-bg-card-2: hsl(217, 19%, 35%);
+    --color-bg-text-card-2: hsl(214, 17%, 92%);
+
+    --color-bg-text-card-3: hsl(224, 10%, 45%);
+
+    --color-bg-card-5: hsl(219, 29%, 14%);
+    --color-bg-title-card-5: hsl(0, 0%, 81%);
+    --color-bg-text-card-5: hsl(214, 17%, 92%);
+    
+    --color-link: hsl(228, 45%, 44%);
+
+    /* Radius */
+    --radius-s: 0.615rem;             /* 8px */
+
+    /* Micro spacing */
+    --space-3xs: 0.25rem;        /* 4px  → 4 ÷ 13 */
+    --space-2xs: 0.53rem;        /* 8px  → 8 ÷ 13 */
+    --space-xs: 1.07rem;         /* 16px → 16 ÷ 13 */
+
+    /* Core spacing */
+    --space-sm: 1.85rem;         /* 24px → 24 ÷ 13 */
+    --space-lg: 2.46rem;         /* 32px → 32 ÷ 13 */
+
+     /* Large spacing */
+    --space-xl: 3.08rem;           /* 40px → 40 ÷ 13 */
+
+    /* Font families */
+    --font-main: "Barlow Semi Condensed", sans-serif;
+
+    /* Font weights */
+    --weight-medium: 500;
+    --weight-semibold: 600;
+
+    /* Font sizes fixed */
+    /* Font sizes (base: 13px) */
+    --fs-xs: 0.8461rem;      /* 11px → 11 ÷ 13 */
+    --fs-sm: 0.8125rem;      /* 13px → base */
+    --fs-md: 1.538rem;       /* 20px → 20 ÷ 13 */
+
+    /* Text fluid */
+    --text-fluid-xs: clamp(var(--fs-xs), 1vw, var(--fs-sm));  /* 11px - 13px */
+   
+
+    /* Line heights */
+    --lh-subtitles: 1.1;
+    --lh-titles: 1.2;
+    --lh-text: 1.4;
+
+     /* Decoration thicknesss */
+    --thickness-s: 0.08rem;
+    --thickness-m: 0.12rem;
+
+    /* Undeline-offset */
+    --offset-m: 0.15rem;
+    --offset-s: 0.125rem;    /* 2px */
+
+    /* Box-shadow */
+     --shadow-black-soft: 3.08rem 4.62rem 3.85rem 3.62rem rgba(72, 85, 106, 0.24);
+
+    /* Card widths */
+    --card-max-xs: 19.66rem;     /* 255px */
+    --card-max-s: 20.93rem;      /* 305px */
+    --card-max-md: 41.54rem;     /* 540px */
+    --card-max-l: 49.77rem;      /* 647px */
+
+    /* Break points */
+    --bp-sm: 40rem;    /* 600px */
+    --bp-md: 68.3rem; /* 1024px */
+    --bp-lg: 85.3rem; /* 1280px */
+    --bp-xl: 96rem;   /* 1440px */
+}
