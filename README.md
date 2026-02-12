@@ -1,121 +1,271 @@
 # Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+---
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Overview](#-overview)
+  - [The challenge](#-the-challenge)
+  - [Screenshot](#-screenshot)
+    - [Desktop](#desktop)
+    - [Tablet](#tablet)
+    - [Mobile](#mobile)
+  - [Links](#-links)
+- [My Process](#️-my-process)
+  - [Architecture](#️-architecture)
+  - [Component Strategy](#-component-strategy)
+  - [Built With](#-built-with)
+  - [Design System Foundations](#-design-system-foundations)
+  - [Responsive Strategy](#-responsive-strategy)
+  - [What I Reinforced](#-what-i-reinforced)
+  - [Accessibility Considerations](#-accessibility-considerations)
+  - [Future Improvements](#-future-improvements)
+- [Author](#-author)
+- [Acknowledgments](#-acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
-## Overview
+## 📋 Overview
 
-### The challenge
+This project recreates the Testimonials Grid layout using semantic HTML and a scalable CSS architecture based on **CUBE CSS** principles combined with **BEM methodology**.
+
+The focus was not only visual accuracy but building a maintainable and portable component architecture.
+
+---
+
+## 🎯 The challenge
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout across mobile, tablet, and desktop breakpoints
+- Experience a structured grid layout built with `grid-template-areas`
+- Read semantically structured testimonials
+- See a responsive layout that preserves visual hierarchy
 
-### Screenshot
+---
 
-![](./screenshot.jpg)
+## 📸 Screenshot
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+### Desktop
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+![Desktop view](./assets/screenshots/desktop.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+### Tablet
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Tablet view](./assets/screenshots/tablet.png)
 
-### Links
+### Mobile
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+![Mobile view](./assets/screenshots/mobile.png)
 
-## My process
+---
 
-### Built with
+## 🔗 Links
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Solution URL: https://www.frontendmentor.io/solutions/your-solution-link
+- Live Site URL: https://berefire.github.io/testimonials-grid-section/
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+---
 
-### What I learned
+## ⚙️ My Process
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project was built using a **mobile-first workflow**, progressively enhancing the layout using CSS Grid at tablet and desktop breakpoints.
 
-To see how you can add code snippets, see below:
+The primary goal was to separate layout logic from component styling.
+
+---
+
+### 🏗️ Architecture
+
+The project follows the **CUBE CSS** methodology and is organized into structured layers:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+css/
+├── base/
+│   ├── fonts.css
+│   ├── reset.css
+│   ├── tokens.css
+│   └── global.css
+│
+├── composition/
+│   ├── cover.css
+│   ├── page.css
+│   ├── container.css
+│   ├── testimonials-grid.css
+│   ├── stack.css
+│   └── box.css
+│
+├── utilities/
+│   └── link.css
+│
+├── blocks/
+│   ├── card.css
+│   └── attribution.css
+│
+└── main.css
 ```
+
+### Layer Responsibilities
+
+- **Base** → Reset, tokens, typography foundation
+- **Composition** → Layout primitives and structural patterns
+- **Utilities** → Small reusable helpers
+- **Blocks** → Self-contained components
+
+This ensures:
+
+- Layout does not leak into components
+- Components remain portable
+- The system is scalable
+
+---
+
+### 🧩 Component Strategy
+
+The `card` component follows strict BEM conventions.
+
+Example:
+
+```html
+<article class="[ card card--purple ] [ box-lg ]">
+```
+
+- `card` → Base block
+- `.card__element` → Internal structure
+- `.card--modifier` → Visual variants
+
+Internal structure example:
+
+```html
+<div class="card__header">
+  <img class="card__avatar">
+  <div class="card__user">
+    <p class="card__name"></p>
+    <p class="card__role"></p>
+  </div>
+</div>
+
+<h2 class="card__title"></h2>
+
+<blockquote class="card__quote">
+  Testimonial content
+</blockquote>
+```
+
+Grid positioning is handled exclusively at the composition level, keeping the block independent.
+
+---
+
+### 🛠 Built With
+
+- Semantic HTML5
+- CSS Custom Properties (Design Tokens)
+- CSS Grid (grid-template-areas)
+- Mobile-first workflow
+- CUBE CSS architecture
+- BEM naming conventions
+- Logical properties (margin-block, inline-size)
+- Base font-size: 13px
+- Local font hosting (Barlow Semi Condensed)
+
+---
+
+### 🎨 Design System Foundations
+
+The project is powered by a centralized token system. Design Tokens include:
+
+- Color system
+- Spacing scale (base 13px)
+- Typography scale
+- Font weights
+- Shadows
+- Border radius
+- Breakpoints (rem-based, 16px reference)
+
+Example:
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+:root {
+  --space-lg: 2.4615rem;
+  --fs-md: 1.538rem;
+  --container-max-desktop: 69.625rem;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+This allows:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- Consistent rhythm
+- Easier refactoring
+- Predictable scaling
 
-### Continued development
+---
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+### 📐 Responsive Strategy
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+The layout is controlled through a dedicated composition:
 
-### Useful resources
+```html
+.testimonials-grid
+```
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- **Mobile:** Single column grid using gap.
+- **Tablet:** Two-column layout using grid-template-areas.
+- **Desktop:** Four-column asymmetric layout.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+The container controls the global width:
 
-### AI Collaboration
+- Tablet → 647px
+- Desktop → 1114px
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+Cards never control their own width; the layout does.
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+---
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+### 📚 What I Reinforced
 
-## Author
+Through this project, I reinforced:
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- True separation of concerns in CUBE CSS
+- Proper use of BEM without positional naming
+- Avoiding layout logic inside components
+- Using containers instead of max-width on items
+- Semantic improvements with `<blockquote>`
+- Architectural thinking instead of visual-only styling
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+---
 
-## Acknowledgments
+### ♿ Accessibility Considerations
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Semantic landmarks (main, section, article)
+- Testimonials wrapped in `<blockquote>`
+- Decorative images marked with aria-hidden="true"
+- Descriptive alt attributes
+- Proper heading structure
+- Sufficient color contrast
+- Respect for prefers-reduced-motion
+- Logical properties for better internationalization
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+---
+
+### 🚀 Future Improvements
+
+- Introduce container queries
+- Implement CSS @layer
+- Expand token system for theme variants
+- Convert layout primitives into reusable patterns
+- Add visual regression testing
+
+---
+
+## 👤 Author
+
+- Frontend Mentor - [@berefire](https://www.frontendmentor.io/profile/berefire)
+- GitHub - [@berefire](https://github.com/berefire)
+
+---
+
+## 🙏 Acknowledgments
+
+Thanks to Frontend Mentor for providing realistic challenges that encourage architectural thinking, not just layout replication.
