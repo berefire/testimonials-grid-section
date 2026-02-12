@@ -1,142 +1,143 @@
+/* =========================================
+   BLOCK
+========================================= */
+
 .card {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  position: relative;
 }
 
-.card h2 {
+
+/* =========================================
+   ELEMENTS
+========================================= */
+
+.card__title {
   font-size: var(--fs-md);
   font-weight: var(--weight-semibold);
   line-height: var(--lh-titles);
 }
 
-.card p {
+.card__quote {
   line-height: var(--lh-text);
 }
 
-.testimonial-info {
+.card__header {
   display: flex;
   gap: var(--space-img);
   align-items: center;
 }
 
-.card .user-info__text {
+.card__name {
   line-height: var(--lh-subtitles);
 }
 
-.card .user-info__text p:last-child {
+.card__role {
   font-size: var(--fs-xs);
 }
 
-.card img:not(.card__design) {
+.card__avatar {
   inline-size: var(--user-size);
   block-size: var(--user-size);
   object-fit: cover;
   border-radius: 50%;
 }
 
-.card-1 {
+/* =========================================
+   MODIFIERS (visual variants)
+========================================= */
+
+.card--purple {
   background-color: var(--color-bg-card-1);
   color: var(--color-white);
-  position: relative;
   overflow: hidden;
 }
 
-.card-1 .card__design {
+.card__decoration {
   display: none;
   position: absolute;
 }
 
-.card-1 .user-info__text p:last-child {
+.card--purple .card__role {
   color: var(--color-bg-text-card-1);
 }
 
-.card-1 .user-info__text p:first-child {
-  color: var(--color-bg-white);
-}
-
-.card-1 p {
+.card--purple .card__quote {
   color: var(--color-bg-text-card-1);
 }
 
-.card-1 img:not(.card__design) {
+.card--purple .card__avatar {
   box-shadow: 0 0 0 var(--border-width-s) var(--color-bg-img-card-1);
 }
 
-.card-2 {
+.card--navy {
   background-color: var(--color-bg-card-2);
   color: var(--color-white);
 }
 
-.card-2 .user-info__text p:last-child {
+.card--navy .card__role {
   color: var(--color-bg-text-card-2);
 }
 
-.card-2 .user-info__text p:first-child {
-  color: var(--color-bg-white);
-}
-
-.card-2 p {
+.card--navy .card__quote {
   color: var(--color-bg-text-card-2);
 }
 
-.card-3 {
-  position: relative;
+.card--light {
+  background-color: var(--color-white);
+  color: var(--color-bg-card-2);
   z-index: 1;
 }
 
-.card-3,
-.card-5 {
-  background-color: var(--color-white);
-  color: var(--color-bg-card-2);
-}
 
-.card-3 .user-info__text p:last-child,
-.card-5.user-info__text p:last-child {
+.card--light .card__role {
   color: var(--color-bg-text-card-3);
 }
 
-.card-3 .user-info__text p:first-child,
-.card-5 .user-info__text p:first-child {
-  color: var(--color-bg-card-2);
-}
 
-.card-3 p,
-.card-5 p {
+.card--light .card__quote {
   color: var(--color-bg-text-card-3);
 }
 
-.card-4 {
+.card--dark {
   background-color: var(--color-bg-card-4);
   color: var(--color-bg-title-card-4);
 }
 
-.card-4 .user-info__text p {
+.card--dark .card__user {
   color: var(--color-white);
 }
 
-.card-4 p {
+.card--dark .card__quote {
   color: var(--color-bg-text-card-4);
 }
 
-.card-4 img {
+.card--dark .card__avatar {
   box-shadow: 0 0 0 var(--border-width-s) var(--color-bg-card-1);
 }
 
-@media (min-width: 46.15rem) {
-  .card-1 .card__design {
+/* =============================================================
+   DECORATION (only visible on tablets and larger screens)
+================================================================== */
+
+@media (min-width: 48rem) {
+  .card--purple .card__decoration {
     display: block;
     top: 0;
     right: var(--quotation-offset-inline);
     z-index: 0;
   }
 
-  .card-1 > *:not(.card__design) {
+  .card--purple > *:not(.card__decoration) {
     position: relative;
     z-index: 1;
   }
 }
 
-@media (min-width: 78.77rem) {
-  .card-1 .card__design {
+@media (min-width: 64rem) {
+  .card--purple .card__decoration {
     right: var(--quotation-offset-inline-xs);
   }
 }

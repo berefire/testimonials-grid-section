@@ -77,19 +77,15 @@
     /* Border thickness */
     --border-width-s: 0.1538rem;
 
-    /* Card widths */
-    --card-max-xs: 19.6154rem;     /* 255px */
-    --card-max-s: 23.4615rem;      /* 305px */
-    --card-max-m: 23.6538rem;      /* 307.5px */
-    --card-max-md: 41.5385rem;     /* 540px */
-    --card-max-l: 49.7692rem;      /* 647px */
+    /* Cantainer widths */
+    --container-max-mobile: 23.4615rem;      /* 305px */
+    --container-max-tablet: 49.7692rem;      /* 647px */
+    --container-max-desktop: 85.6923rem;     /* 1114px */
 
     /* User img Size */
     --user-size: 2.4615rem;
 
-    /* Break points */
-    --bp-sm: 46.15rem;    /* 600px */
-    --bp-md: 78.77rem; /* 1024px */
-    --bp-lg: 98.46rem; /* 1280px */
-    --bp-xl: 110.77rem;   /* 1440px */
+    /* Break points always 16px as base */
+    --bp-md: 48rem;  /* 768px */
+    --bp-lg: 64rem;  /* 1024px */
 }
