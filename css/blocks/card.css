@@ -1,0 +1,133 @@
+.card {
+    height: 100%;
+}
+
+.card h2 {
+    font-size: var(--fs-md);
+    font-weight: var(--weight-semibold);
+    line-height: var(--lh-titles);
+}
+
+.card p {
+    line-height: var(--lh-text);
+}
+
+.testimonial-info {
+    display: flex;
+    gap: var(--space-img);
+    align-items: center;
+}
+
+.card .user-info__text {
+    line-height: var(--lh-subtitles);
+}
+
+.card .user-info__text p:last-child {
+    font-size: var(--fs-xs);
+}
+
+.card img:not(.card__design) {
+    inline-size: var(--user-size);
+    block-size: var(--user-size);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.card-1 {
+    background-color: var(--color-bg-card-1);
+    color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-1 .card__design {
+    display: none;
+    position: absolute;
+}
+
+.card-1 .user-info__text p:last-child {
+    color: var(--color-bg-text-card-1);
+}
+
+.card-1 .user-info__text p:first-child {
+    color: var(--color-bg-white);
+}
+
+.card-1 p {
+    color: var(--color-bg-text-card-1);
+}
+
+.card-1 img:not(.card__design) {
+    box-shadow: 0 0 0 var(--border-width-s) var(--color-bg-img-card-1);
+}
+
+.card-2 {
+    background-color: var(--color-bg-card-2);
+    color: var(--color-white);
+}
+
+.card-2 .user-info__text p:last-child {
+    color: var(--color-bg-text-card-2);
+}
+
+.card-2 .user-info__text p:first-child {
+    color: var(--color-bg-white);
+}
+
+.card-2 p {
+    color: var(--color-bg-text-card-2);
+}
+
+.card-3 {
+    position: relative;
+    z-index: 1;
+}
+
+.card-3, .card-5 {
+    background-color: var(--color-white);
+    color: var(--color-bg-card-2);
+}
+
+.card-3 .user-info__text p:last-child, .card-5.user-info__text p:last-child {
+    color: var(--color-bg-text-card-3);
+}
+
+.card-3 .user-info__text p:first-child, .card-5 .user-info__text p:first-child {
+    color: var(--color-bg-card-2);
+}
+
+.card-3 p, .card-5 p {
+    color: var(--color-bg-text-card-3);
+}
+
+.card-4 {
+    background-color: var(--color-bg-card-4);
+    color: var(--color-bg-title-card-4);
+}
+
+.card-4 .user-info__text p {
+    color: var(--color-white);
+}
+
+.card-4 p {
+    color: var(--color-bg-text-card-4);
+}
+
+.card-4 img {
+    box-shadow: 0 0 0 var(--border-width-s) var(--color-bg-card-1);
+}
+
+@media (min-width: 40rem) {
+    .card-1 .card__design {
+        display: block;
+        top: 0;
+        right: var(--quotation-offset-inline);
+        z-index: 0;
+  }
+
+  .card-1 > *:not(.card__design) {
+    position: relative;
+    z-index: 1;
+  }
+}

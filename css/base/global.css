@@ -1,6 +1,7 @@
 html {
     font-family: var(--font-main);
-    font-size: var(--fs-sm);
+    font-size: 13px;
+    font-weight: var(--weight-medium);
     -webkit-text-size-adjust: 100%;
 }
 

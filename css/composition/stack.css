@@ -5,3 +5,18 @@
 .stack-xs > * + * {
     margin-block-start: var(--space-xs);
 }
+
+.stack-3xs > * + * {
+    margin-block-start: var(--space-3xs);
+}
+
+.stack--trim-last > :last-child {
+    margin-block-start: 0;
+}
+
+
+@media (min-width: 40rem) {
+    .stack-lg > * + * {
+        margin-block-start: 0;
+    }
+}

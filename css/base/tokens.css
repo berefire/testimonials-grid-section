@@ -10,26 +10,27 @@
 
     --color-bg-text-card-3: hsl(224, 10%, 45%);
 
-    --color-bg-card-5: hsl(219, 29%, 14%);
-    --color-bg-title-card-5: hsl(0, 0%, 81%);
-    --color-bg-text-card-5: hsl(214, 17%, 92%);
+    --color-bg-card-4: hsl(219, 29%, 14%);
+    --color-bg-title-card-4: hsl(0, 0%, 81%);
+    --color-bg-text-card-4: hsl(214, 17%, 92%);
     
     --color-link: hsl(228, 45%, 44%);
 
     /* Radius */
-    --radius-s: 0.615rem;             /* 8px */
+    --radius-s: 0.6154rem;             /* 8px */
 
     /* Micro spacing */
-    --space-3xs: 0.25rem;        /* 4px  → 4 ÷ 13 */
-    --space-2xs: 0.53rem;        /* 8px  → 8 ÷ 13 */
-    --space-xs: 1.23rem;         /* 16px → 16 ÷ 13 */
+    --space-3xs: 0.3077rem;        /* 4px  → 4 ÷ 13 */
+    --space-2xs: 0.6154rem;        /* 8px  → 8 ÷ 13 */
+    --space-xs: 1.2308rem;         /* 16px → 16 ÷ 13 */
+    --space-img: 1.3077rem;        /* 17px → 17 ÷ 13 */
 
     /* Core spacing */
-    --space-sm: 1.85rem;         /* 24px → 24 ÷ 13 */
-    --space-lg: 2.46rem;         /* 32px → 32 ÷ 13 */
+    --space-sm: 1.8462rem;         /* 24px → 24 ÷ 13 */
+    --space-lg: 2.4615rem;         /* 32px → 32 ÷ 13 */
 
      /* Large spacing */
-    --space-xl: 3.08rem;           /* 40px → 40 ÷ 13 */
+    --space-xl: 3.0769rem;           /* 40px → 40 ÷ 13 */
 
     /* Font families */
     --font-main: "Barlow Semi Condensed", sans-serif;
@@ -41,7 +42,7 @@
     /* Font sizes fixed */
     /* Font sizes (base: 13px) */
     --fs-xs: 0.8461rem;      /* 11px → 11 ÷ 13 */
-    --fs-sm: 0.8125rem;      /* 13px → base */
+    --fs-sm: 1rem;      /* 13px → base */
     --fs-md: 1.538rem;       /* 20px → 20 ÷ 13 */
 
     /* Text fluid */
@@ -61,14 +62,23 @@
     --offset-m: 0.15rem;
     --offset-s: 0.125rem;    /* 2px */
 
+    --quotation-offset-inline: 12.6154rem;   /* 164px */
+
     /* Box-shadow */
      --shadow-black-soft: 3.08rem 4.62rem 3.85rem 3.62rem rgba(72, 85, 106, 0.24);
 
+    /* Border thickness */
+    --border-width-s: 0.1538rem;
+
     /* Card widths */
-    --card-max-xs: 19.66rem;     /* 255px */
-    --card-max-s: 20.93rem;      /* 305px */
-    --card-max-md: 41.54rem;     /* 540px */
-    --card-max-l: 49.77rem;      /* 647px */
+    --card-max-xs: 19.6154rem;     /* 255px */
+    --card-max-s: 23.4615rem;      /* 305px */
+    --card-max-m: 23.6538rem;      /* 307.5px */
+    --card-max-md: 41.5385rem;     /* 540px */
+    --card-max-l: 49.7692rem;      /* 647px */
+
+    /* User img Size */
+    --user-size: 2.4615rem;
 
     /* Break points */
     --bp-sm: 40rem;    /* 600px */

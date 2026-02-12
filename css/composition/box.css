@@ -1,10 +1,56 @@
 .box-lg {
     padding: var(--space-lg);
-    max-width: var(--card-max-s);
     box-shadow: var(--shadow-black-soft);
     border-radius: var(--radius-s);
+    max-width: var(--card-max-s);
 }
 
 .box-xl {
     margin-block: var(--space-xl);
+}
+
+@media (min-width: 40rem) {
+    .box-lg {
+        max-width: none;
+    }
+
+    .box-xl {
+        display: grid;
+        gap: var(--space-lg);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "card-1 card-1"
+            "card-2 card-3"
+            "card-4 card-4"
+            "card-5 card-5"
+    }
+
+    .card-1 {
+        grid-area: card-1;
+        max-width: var(--card-max-l);
+        
+    }
+
+    .card-2 {
+        grid-area: card-2;
+        max-width: var(--card-max-m);
+    }
+
+    .card-3 {
+        grid-area: card-3;
+        max-width: var(--card-max-m);
+    }
+
+    .card-4 {
+        grid-area: card-4;
+         max-width: var(--card-max-l);
+       
+    }
+
+    .card-5 {
+        grid-area: card-5;
+        max-width: var(--card-max-l);
+    }
+
+
 }
