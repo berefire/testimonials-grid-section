@@ -30,7 +30,13 @@
     --space-lg: 2.4615rem;         /* 32px → 32 ÷ 13 */
 
      /* Large spacing */
-    --space-xl: 3.0769rem;           /* 40px → 40 ÷ 13 */
+    --space-xl: 3.0769rem;    /* 40px */
+    --space-2xl: 5.6154rem;   /* 73px */
+    --space-3xl: 6.3846rem;   /* 83px */
+    --space-4xl: 8.6923rem;   /* 113px */
+    --space-5xl: 16.7692rem;  /* 218px */
+    --space-6xl: 17.6154rem;  /* 229px */
+
 
     /* Font families */
     --font-main: "Barlow Semi Condensed", sans-serif;
@@ -62,6 +68,7 @@
     --offset-m: 0.15rem;
     --offset-s: 0.125rem;    /* 2px */
 
+    --quotation-offset-inline-xs: 4.6153rem;  /* 60px */
     --quotation-offset-inline: 12.6154rem;   /* 164px */
 
     /* Box-shadow */
@@ -81,8 +88,8 @@
     --user-size: 2.4615rem;
 
     /* Break points */
-    --bp-sm: 40rem;    /* 600px */
-    --bp-md: 68.3rem; /* 1024px */
-    --bp-lg: 85.3rem; /* 1280px */
-    --bp-xl: 96rem;   /* 1440px */
+    --bp-sm: 46.15rem;    /* 600px */
+    --bp-md: 78.77rem; /* 1024px */
+    --bp-lg: 98.46rem; /* 1280px */
+    --bp-xl: 110.77rem;   /* 1440px */
 }
