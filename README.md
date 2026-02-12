@@ -64,8 +64,8 @@ Users should be able to:
 
 ## 🔗 Links
 
-- Solution URL: https://www.frontendmentor.io/solutions/your-solution-link
-- Live Site URL: https://berefire.github.io/testimonials-grid-section/
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonials-grid-with-cube-css-and-bem-architecture-azcBx_z1iw](https://www.frontendmentor.io/solutions/testimonials-grid-with-cube-css-and-bem-architecture-azcBx_z1iw)
+- Live Site URL: [https://berefire.github.io/testimonials-grid-section/](https://berefire.github.io/testimonials-grid-section/)
 
 ---
 
