@@ -72,7 +72,7 @@
     --quotation-offset-inline: 12.6154rem;   /* 164px */
 
     /* Box-shadow */
-     --shadow-black-soft: 3.08rem 4.62rem 3.85rem 3.62rem rgba(72, 85, 106, 0.24);
+     --shadow-black-soft: 3.08rem 4.62rem 3.85rem -0.5rem rgba(72, 85, 106, 0.24);
 
     /* Border thickness */
     --border-width-s: 0.1538rem;
