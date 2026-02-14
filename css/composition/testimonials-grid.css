@@ -28,6 +28,7 @@
 @media (min-width: 64rem) {
     .testimonials-grid {
         grid-template-columns: repeat(4, 1fr);
+        row-gap: var(--space-sm);
         grid-template-areas:
             "a a b e"
             "c d d e";
