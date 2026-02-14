@@ -48,7 +48,7 @@
     /* Font sizes fixed */
     /* Font sizes (base: 13px) */
     --fs-xs: 0.8461rem;      /* 11px → 11 ÷ 13 */
-    --fs-sm: 1rem;      /* 13px → base */
+    --fs-sm: 0.8125rem;      /* 13px → base */
     --fs-md: 1.538rem;       /* 20px → 20 ÷ 13 */
 
     /* Text fluid */
