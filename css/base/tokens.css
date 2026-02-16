@@ -1,5 +1,6 @@
 :root {
     /* Colors */
+    --color-bg-main: #f6f5f6;
     --color-white: hsl(0, 0%, 100%);
     --color-bg-card-1: hsl(263, 55%, 52%);
     --color-bg-img-card-1: hsl(264, 82%, 70%);
