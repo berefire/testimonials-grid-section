@@ -3,10 +3,6 @@
     gap: var(--space-lg);
 }
 
-.testimonials-grid > * {
-    height: 100%;
-}
-
 @media (min-width: 48rem) {
     .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
