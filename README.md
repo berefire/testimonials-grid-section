@@ -1,5 +1,20 @@
 # Frontend Mentor - Testimonials grid section solution
 
+![GitHub last commit](https://img.shields.io/github/last-commit/berefire/testimonials-grid-section)
+![Repo size](https://img.shields.io/github/repo-size/berefire/testimonials-grid-section)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
+[![Visual Studio Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
+[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+![Semantic HTML](https://img.shields.io/badge/Semantic%20HTML-ff9800?style=for-the-badge)
+![Accessible](https://img.shields.io/badge/Accessibility-A11Y-0052cc?style=for-the-badge)
+![Responsive Layout](https://img.shields.io/badge/Responsive%20Layout-Full%20Support-blue?style=for-the-badge)
+![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
+[![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](./assets/downloads/lighthouse-performance-report.pdf)
+
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ---
@@ -9,9 +24,6 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - [Overview](#-overview)
   - [The challenge](#-the-challenge)
   - [Screenshot](#-screenshot)
-    - [Desktop](#desktop)
-    - [Tablet](#tablet)
-    - [Mobile](#mobile)
   - [Links](#-links)
 - [My Process](#️-my-process)
   - [Architecture](#️-architecture)
@@ -48,17 +60,9 @@ Users should be able to:
 
 ## 📸 Screenshot
 
-### Desktop
-
-![Desktop view](./assets/screenshots/desktop.png)
-
-### Tablet
-
-![Tablet view](./assets/screenshots/tablet.png)
-
-### Mobile
-
-![Mobile view](./assets/screenshots/mobile.png)
+| _Mobile View (375x914)_                         | _Tablet View (768x914)_                         | _Desktop View (1024x914)_                         |
+| ----------------------------------------------- | ----------------------------------------------- | ------------------------------------------------- |
+| ![Mobile view](./assets/screenshots/mobile.png) | ![Tablet view](./assets/screenshots/tablet.png) | ![Desktop view](./assets/screenshots/desktop.png) |
 
 ---
 
