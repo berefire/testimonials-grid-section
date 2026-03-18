@@ -24,17 +24,17 @@
   line-height: var(--lh-text);
 }
 
-.card__header {
+.avatar {
   display: flex;
   gap: var(--space-img);
   align-items: center;
 }
 
-.card__name {
+.avatar__name {
   line-height: var(--lh-subtitles);
 }
 
-.card__role {
+.avatar__role {
   font-size: var(--fs-xs);
 }
 
@@ -60,7 +60,7 @@
   position: absolute;
 }
 
-.card--purple .card__role {
+.card--purple .avatar__role {
   color: var(--color-bg-text-card-1);
 }
 
@@ -77,7 +77,7 @@
   color: var(--color-white);
 }
 
-.card--navy .card__role {
+.card--navy .avatar__role {
   color: var(--color-bg-text-card-2);
 }
 
@@ -92,7 +92,7 @@
 }
 
 
-.card--light .card__role {
+.card--light .avatar__role {
   color: var(--color-bg-text-card-3);
 }
 
@@ -106,7 +106,7 @@
   color: var(--color-bg-title-card-4);
 }
 
-.card--dark .card__user {
+.card--dark .avatar__caption {
   color: var(--color-white);
 }
 
